@@ -54,6 +54,9 @@ sbt new sbt/scala-seed.g8
 sbt new akka/akka-quickstart-scala.g8
 ```
 
+### 作ろうとしているもの
+![あ](https://raw.githubusercontent.com/shakamo/scala-akka-kinesis/drawio/kinesis-akka-stream.png)
+
 ### 参考
 - JDK 切り替え
   - https://qiita.com/seijikohara/items/56cc4ac83ef9d686fab2
