@@ -6,7 +6,8 @@ import com.amazonaws.auth.{BasicAWSCredentials, AWSCredentialsProvider}
 import com.amazonaws.services.kinesis.clientlibrary.interfaces.{IRecordProcessorCheckpointer, IRecordProcessor, IRecordProcessorFactory}
 import com.amazonaws.services.kinesis.clientlibrary.lib.worker.InitialPositionInStream
 import com.amazonaws.services.kinesis.clientlibrary.lib.worker.{Worker, KinesisClientLibConfiguration}
-import com.amazonaws.services.kinesis.clientlibrary.types.{UserRecord, ShutdownReason}
+import com.amazonaws.services.kinesis.clientlibrary.types.{UserRecord}
+import com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShutdownReason;
 import com.amazonaws.services.kinesis.model.Record
 
 object Main {
@@ -14,7 +15,7 @@ object Main {
   val secretAccessKey = System.getProperty("secretAccessKey")
 
   val appName = "kinesis-test-app"
-  val streamName = "kinesis-test-stream"
+  val streamName = "akka-stream"
 
   val initialPosition = "LATEST"
   val region = "ap-northeast-1"
