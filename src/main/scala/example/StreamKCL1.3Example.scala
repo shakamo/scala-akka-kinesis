@@ -1,3 +1,6 @@
+//#full-example
+package example
+
 import java.net.InetAddress
 import java.util
 import java.util.UUID
